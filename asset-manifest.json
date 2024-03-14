@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.fbb98c3a.css",
-    "main.js": "/static/js/main.aead53c2.js",
+    "main.js": "/static/js/main.dc900135.js",
     "static/js/592.6d7de513.chunk.js": "/static/js/592.6d7de513.chunk.js",
     "static/media/pypi-seeklogo.svg": "/static/media/pypi-seeklogo.42fdc08e71128001aa6c9806633ef6d2.svg",
     "static/media/bash.svg": "/static/media/bash.1059020e0bdfff1f22c0bd14d3973498.svg",
+    "static/media/sql.svg": "/static/media/sql.034691de2cd65f0a8bf14a6b8aca22eb.svg",
     "static/media/react.svg": "/static/media/react.103b5fa18196d5665a7e12318285c916.svg",
     "static/media/rust.svg": "/static/media/rust.853b0d57423fb1620169973f7f81b739.svg",
     "static/media/cpp.svg": "/static/media/cpp.2441702dffa95ca3c92c20816e386640.svg",
@@ -17,11 +18,11 @@
     "static/media/html.svg": "/static/media/html.5804150e47fbeb132a5d2688f08ce4c8.svg",
     "static/media/icons8-menu.svg": "/static/media/icons8-menu.6c2ed479dcbd048b90cbc6ef11da689a.svg",
     "main.fbb98c3a.css.map": "/static/css/main.fbb98c3a.css.map",
-    "main.aead53c2.js.map": "/static/js/main.aead53c2.js.map",
+    "main.dc900135.js.map": "/static/js/main.dc900135.js.map",
     "592.6d7de513.chunk.js.map": "/static/js/592.6d7de513.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbb98c3a.css",
-    "static/js/main.aead53c2.js"
+    "static/js/main.dc900135.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fbb98c3a.css",
-    "main.js": "/static/js/main.9520eb8b.js",
+    "main.js": "/static/js/main.aead53c2.js",
     "static/js/592.6d7de513.chunk.js": "/static/js/592.6d7de513.chunk.js",
     "static/media/pypi-seeklogo.svg": "/static/media/pypi-seeklogo.42fdc08e71128001aa6c9806633ef6d2.svg",
     "static/media/bash.svg": "/static/media/bash.1059020e0bdfff1f22c0bd14d3973498.svg",
@@ -9,6 +9,7 @@
     "static/media/rust.svg": "/static/media/rust.853b0d57423fb1620169973f7f81b739.svg",
     "static/media/cpp.svg": "/static/media/cpp.2441702dffa95ca3c92c20816e386640.svg",
     "static/media/python-icon.svg": "/static/media/python-icon.1760187fb6ae4aecb3a96dd72d28c8c1.svg",
+    "static/media/c-1.svg": "/static/media/c-1.21a8fab81e76bf019238a55c1c88198c.svg",
     "static/media/java.svg": "/static/media/java.3c5854fce4aa30ad19d569c45d5ce874.svg",
     "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/index.html",
@@ -16,11 +17,11 @@
     "static/media/html.svg": "/static/media/html.5804150e47fbeb132a5d2688f08ce4c8.svg",
     "static/media/icons8-menu.svg": "/static/media/icons8-menu.6c2ed479dcbd048b90cbc6ef11da689a.svg",
     "main.fbb98c3a.css.map": "/static/css/main.fbb98c3a.css.map",
-    "main.9520eb8b.js.map": "/static/js/main.9520eb8b.js.map",
+    "main.aead53c2.js.map": "/static/js/main.aead53c2.js.map",
     "592.6d7de513.chunk.js.map": "/static/js/592.6d7de513.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbb98c3a.css",
-    "static/js/main.9520eb8b.js"
+    "static/js/main.aead53c2.js"
   ]
 }

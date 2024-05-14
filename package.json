@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "Ryzeon portfolio",
   "version": "0.1.0",
   "private": false,
   "homepage": "https://ryzeon-dev.github.io/",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d build -o master"
   },
   "eslintConfig": {
     "extends": [

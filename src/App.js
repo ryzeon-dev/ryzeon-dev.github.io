@@ -6,12 +6,13 @@ import react from './svgs/react.svg';
 import github from './svgs/github-mark-white.svg';
 import pypi from './svgs/pypi-seeklogo.svg';
 import crates_io from './svgs/crate-io.png';
-//import c from './svgs/c.svg';
+import c from './svgs/c-1.svg';
 import cpp from './svgs/cpp.svg';
 import java from './svgs/java.svg';
 import bash from './svgs/bash.svg';
 import html from './svgs/html.svg';
 import css from './svgs/css.svg';
+import sql from './svgs/sql.svg';
 import { useHover } from "@uidotdev/usehooks";
 import menu from './svgs/icons8-menu.svg';
 import {flushSync} from "react-dom";
@@ -61,18 +62,16 @@ function HomePage() {
         },
 
         pythonLogo: {
-            width: '70px',
-            marginLeft: '10px'
+
+
         },
 
         rustLogo: {
-            width: '100px',
-            marginLeft: '-8px'
+
         },
 
         reactLogo: {
-            width: '120px',
-            marginLeft: '-14px'
+
         },
 
         githubLogo : {
@@ -103,7 +102,7 @@ function HomePage() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignContent: 'center'
+            alignContent: 'center',
         }
     };
 
@@ -132,7 +131,10 @@ function HomePage() {
                 <p style={style.skillText}>The language I'm most skilled with</p>
                 <h3>→</h3>
                 <div ref={pythonRef} style={style.hoverDiv}>
-                    <img src={python} style={style.pythonLogo}></img>
+                    <img src={python} style={{
+                        width: '70px',
+                        marginLeft: '10px',
+                    }}></img>
                     <p style={{
                         display: (pythonHover ? "block" : "none"),
                         position: 'absolute',
@@ -142,7 +144,7 @@ function HomePage() {
                         padding: '5px',
                         borderRadius: '10px',
                         textAlign: 'end',
-                        alignSelf: 'center'
+                        alignSelf: 'center',
                     }}>
                         <strong>Python</strong></p>
                 </div>
@@ -150,7 +152,10 @@ function HomePage() {
                 <p style={style.skillText}>My go-to compiled language</p>
                 <h3>→</h3>
                 <div ref={rustRef} style={style.hoverDiv}>
-                    <img src={rust} style={style.rustLogo}></img>
+                    <img src={rust} style={{
+                        width: '100px',
+                        marginLeft: '-8px',
+                    }}></img>
                     <p style={{
                         display: (rustHover ? "block" : "none"),
                         position: 'absolute',
@@ -167,7 +172,10 @@ function HomePage() {
                 <p style={style.skillText}>My go-to web development framework</p>
                 <h3>→</h3>
                 <div ref={reactRef} style={style.hoverDiv}>
-                    <img src={react} style={style.reactLogo}></img>
+                    <img src={react} style={{
+                        width: '120px',
+                        marginLeft: '-14px',
+                    }}></img>
                     <p style={{
                         display: (reactHover ? "block" : "none"),
                         position: 'absolute',
@@ -198,7 +206,7 @@ function HomePage() {
                         borderRadius: '10px',
                         alignSelf: 'center',
                         marginLeft: '0',
-                        marginTop: '200px'
+                        marginTop: '200px',
                     }}
                     ><strong>GitHub.com</strong></p>
                 </a>
@@ -258,7 +266,7 @@ function Skill(props) {
     
     return props.align == 'left' ?  (
         <div style={style.main}>
-            <img src={props.logo} style={{height: '100px', marginRight: '50px'}}/>
+            <img src={props.logo} style={{height: '100px', marginRight: props.marginRight ? props.marginRight : '50px'}}/>
             <h3>{props.name}</h3>
         </div>
     ) : (
@@ -297,12 +305,14 @@ function Skills() {
             <h1 style={style.title}>My Skills</h1>
             <Skill logo={python} name={"Python"} align={"left"}/>
             <Skill logo={rust} name={"Rust"} align={"right"}/>
-            <Skill logo={cpp} name={"C++"} align={"left"}/>
-            <Skill logo={java} name={"Java"} align={"right"}/>
-            <Skill logo={bash} name={"Bash"} align={"left"}/>
-            <Skill logo={html} name={"Html"} align={"right"}/>
-            <Skill logo={css} name={"Css"} align={"left"}/>
-            <Skill logo={react} name={"React"} align={"right"} marginLeft={"10px"} />
+            <Skill logo={c} name={"C"} align={"left"}/>
+            <Skill logo={cpp} name={"C++"} align={"right"}/>
+            <Skill logo={java} name={"Java"} align={"left"}/>
+            <Skill logo={bash} name={"Bash"} align={"right"}/>
+            <Skill logo={html} name={"Html"} align={"left"}/>
+            <Skill logo={css} name={"Css"} align={"right"}/>
+            <Skill logo={react} name={"React"} align={"left"} marginRight={"10px"} />
+            <Skill logo={sql} name={"SQL"} align={"right"}  />
         </div>
     )
 }
@@ -357,6 +367,21 @@ function Projects() {
         <div style={style.main}>
             <h1 style={style.title}>Most recent projects:</h1>
             <Project
+                name={"Skarlett"}
+                description={"Procedural interpreted programming language, featuring an easy syntax, high logic computation capabilities and binary numbers manipulation"}
+                languages={
+                    <div style={{alignSelf: 'center'}}>
+                        <img style={style.languageLogo} src={python}/>
+                    </div>
+                }
+                links={
+                    <div style={{alignSelf: 'center'}}>
+                        <a href={"https://github.com/skarlett-language"}><img src={github} style={style.linkLogo}/></a>
+                    </div>
+                }
+            />
+
+            <Project
                 name={"sysutil"}
                 description={"Linux system utils library"}
                 languages={
@@ -370,6 +395,37 @@ function Projects() {
                         <a href={"https://crates.io/crates/sysutil"}><img src={crates_io} style={style.linkLogo}/></a>
                         <a href={"https://pypi.org/project/sysutil-lib/"}><img src={pypi} style={style.linkLogo}/></a>
                         <a href={"https://github.com/ryzeon-dev/sysutil"}><img src={github} style={style.linkLogo}/></a>
+                    </div>
+                }
+            />
+
+            <Project
+                name={'rsAutoTor'}
+                description={'TOR network automatic ip changer written in Rust '}
+                languages={
+                    <div style={{alignSelf: 'center'}}>
+                        <img style={style.languageLogo} src={rust}/>
+                    </div>
+                }
+                links={
+                    <div style={{alignSelf: 'center'}}>
+                        <a href={"https://github.com/ryzeon-dev/rsAutoTor"}><img src={github} style={style.linkLogo}/></a>
+                    </div>
+                }
+            />
+
+            <Project
+                name={'macbook-cpu-fan'}
+                description={'Macbook fan controller daemon (Rust) and CLI (Python3)'}
+                languages={
+                    <div style={{alignSelf: 'center'}}>
+                        <img style={style.languageLogo} src={rust}/>
+                        <img style={style.languageLogo} src={python}/>
+                    </div>
+                }
+                links={
+                    <div style={{alignSelf: 'center'}}>
+                        <a href={"https://github.com/ryzeon-dev/macbook-cpu-fan"}><img src={github} style={style.linkLogo}/></a>
                     </div>
                 }
             />
@@ -478,7 +534,7 @@ function App() {
                             backgroundColor: GRAY,
                             borderRadius: '10px',
                             paddingLeft: '5px',
-                            paddingRight: '5px'
+                            paddingRight: '5px',
                         }} src={menu}/>
 
                         <div ref={divRef} style={{
@@ -492,7 +548,7 @@ function App() {
                             padding: '5px',
                             marginTop: '-50px',
                             borderColor: GREEN,
-                            borderWidth: '3px'
+                            borderWidth: '3px',
                         }}>
                             <button style={style.buttons} onClick={navigateHome}><strong>Home</strong></button>
                             <button style={style.buttons} onClick={navigateSkills}><strong>Skills</strong></button>

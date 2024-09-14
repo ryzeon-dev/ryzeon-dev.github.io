@@ -365,7 +365,7 @@ function Projects() {
 
     return (
         <div style={style.main}>
-            <h1 style={style.title}>Most recent projects:</h1>
+            <h1 style={style.title}>Recent projects:</h1>
             <Project
                 name={"Skarlett"}
                 description={"Procedural interpreted programming language, featuring an easy syntax, high logic computation capabilities and binary numbers manipulation"}
@@ -377,6 +377,36 @@ function Projects() {
                 links={
                     <div style={{alignSelf: 'center'}}>
                         <a href={"https://github.com/skarlett-language"}><img src={github} style={style.linkLogo}/></a>
+                    </div>
+                }
+            />
+
+            <Project
+                name={"rns"}
+                description={"Rust Network Scan"}
+                languages={
+                    <div style={{alignSelf: 'center'}}>
+                        <img style={style.languageLogo} src={rust}/>
+                    </div>
+                }
+                links={
+                    <div style={{alignSelf: 'center'}}>
+                        <a href={"https://github.com/ryzeon-dev/rns"}><img src={github} style={style.linkLogo}/></a>
+                    </div>
+                }
+            />
+
+            <Project
+                name={"op"}
+                description={"Display open ports in Linux systems"}
+                languages={
+                    <div style={{alignSelf: 'center'}}>
+                        <img style={style.languageLogo} src={python}/>
+                    </div>
+                }
+                links={
+                    <div style={{alignSelf: 'center'}}>
+                        <a href={"https://github.com/ryzeon-dev/op"}><img src={github} style={style.linkLogo}/></a>
                     </div>
                 }
             />
@@ -401,7 +431,7 @@ function Projects() {
 
             <Project
                 name={'rsAutoTor'}
-                description={'TOR network automatic ip changer written in Rust '}
+                description={'TOR network automatic ip changer written in Rust'}
                 languages={
                     <div style={{alignSelf: 'center'}}>
                         <img style={style.languageLogo} src={rust}/>
@@ -410,6 +440,21 @@ function Projects() {
                 links={
                     <div style={{alignSelf: 'center'}}>
                         <a href={"https://github.com/ryzeon-dev/rsAutoTor"}><img src={github} style={style.linkLogo}/></a>
+                    </div>
+                }
+            />
+
+            <Project
+                name={'wws'}
+                description={'Multithreaded utility to scan a website using wordlists written in Python'}
+                languages={
+                    <div style={{alignSelf: 'center'}}>
+                        <img style={style.languageLogo} src={python}/>
+                    </div>
+                }
+                links={
+                    <div style={{alignSelf: 'center'}}>
+                        <a href={"https://github.com/ryzeon-dev/wws"}><img src={github} style={style.linkLogo}/></a>
                     </div>
                 }
             />
